@@ -39,10 +39,11 @@ public class StakJsonRequester implements Callback<JSONObject> {
     @Override
     public void onResponse(Response<JSONObject> response, Retrofit retrofit) {
         if(response != null){
+            JSONObject jrsopnse = response.body();
             String respo = response.toString();
 //            DataModal body = response.body();
 //            Log.e("data receive3d", ""+body);
-            listener.onJsonReceived(respo);
+            listener.onJsonReceived(jrsopnse);
         }
     }
 

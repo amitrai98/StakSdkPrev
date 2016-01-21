@@ -75,11 +75,14 @@ public class VoiceListeningDailogActivity extends Activity implements SpeechList
 //            stakBrowserSpeechRecognizer.destroy();
 //        }
 
-        act = null;
     }
 
     @Override
     public void finish() {
+        if(StakBrowserSpeechRecognizer.stakBrowserSpeechRecognizer != null)
+            StakBrowserSpeechRecognizer.stakBrowserSpeechRecognizer.destroy();
+
+        StakBrowserSpeechRecognizer.stakBrowserSpeechRecognizer = null;
         super.finish();
         overridePendingTransition(R.anim.stay, R.anim.slide_down);
     }
@@ -166,7 +169,7 @@ public class VoiceListeningDailogActivity extends Activity implements SpeechList
     }
     /**
      * Function to stop Voice listening if Speech Recognition is working. T
-     * his method will also stop the Mic animation.
+     * his method will also stop the Mic animation.`
      */
     private void stopVoiceListeningIfEnabled(){
         enableAnimation(false);
