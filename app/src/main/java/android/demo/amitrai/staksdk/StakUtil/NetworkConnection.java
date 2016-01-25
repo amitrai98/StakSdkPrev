@@ -4,7 +4,7 @@
 package android.demo.amitrai.staksdk.StakUtil;
 
 /**
- * @author bhimesh
+ * @author amitrai
  */
 
 import android.content.Context;

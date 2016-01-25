@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 /**
  * @Page/VoiceListeniVoiceListeningDailogActivitygActivity.java:
- * @Author Ajmer Singh:
+ * @Author Amit Rai:
  * @Date: 20 July 2015
  * @Purpose: VoiceListeningDailogActivity used as a utility class to provide Speech Recognition functionality as a Dailog
  * 1. Starting the VoiceListeningActivity from Any other activity using startActivityForResult.
