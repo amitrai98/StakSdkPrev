@@ -11,7 +11,7 @@ import android.speech.SpeechRecognizer;
 import java.util.ArrayList;
 
 /**
- * Created by amit rai on 14/7/15.
+ * Created by ajmersingh on 14/7/15.
  * Singleton class to create as a manager for speech listener, To use this StakBrowserSpeechRecognizer
  * 1.Class should implement SpeechListener interface.
  * 2.Set the stakBrowserSpeechRecognizer.setSpeechListener()
